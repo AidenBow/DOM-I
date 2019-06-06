@@ -57,3 +57,13 @@ for(let i = 0; i < navigation.length; i++){
   navigation[i].textContent = (siteContent.nav[`nav-item-${i+1}`])
   console.log(siteContent.nav[`nav-item-${i+1}`])
 }
+
+let ctaText = document.querySelector(".cta-text h1")
+console.log(ctaText)
+
+ctaText.textContent = siteContent.cta.h1
+
+let ctaBtn = document.querySelector(".cta-text button")
+
+ctaBtn.textContent = siteContent.cta.button
+
