@@ -49,3 +49,11 @@ ctaImg.src = "img/header-img.png"
 
 let midImg = document.getElementById("middle-img")
 midImg.src = "img/mid-page-accent.jpg"
+
+let navigation = document.getElementsByTagName("a")
+console.log(navigation[1])
+
+for(let i = 0; i < navigation.length; i++){
+  navigation[i].textContent = (siteContent.nav[`nav-item-${i+1}`])
+  console.log(siteContent.nav[`nav-item-${i+1}`])
+}
