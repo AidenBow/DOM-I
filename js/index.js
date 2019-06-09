@@ -88,12 +88,14 @@ newImg.src = "https://i.kym-cdn.com/entries/icons/mobile/000/025/923/15045519317
 newImg.style.height = "250px"
 ctaText.prepend(newImg)
 
+let navContainer = document.querySelector("nav")
+
 let newNav = document.createElement("img")
 newNav.src = "https://orig00.deviantart.net/cca9/f/2018/192/d/0/one_very_sad_cat_by_heatherandstuff-dcgx2q4.png"
 newNav.style.height = "40px"
-navigation[0].prepend(newNav)
+navContainer.prepend(newNav)
 
 let newNav2 = document.createElement("img")
 newNav2.src = "https://i.kym-cdn.com/photos/images/newsfeed/001/384/535/295.jpg"
 newNav2.style.height = "40px"
-navigation[5].appendChild(newNav2)
+navContainer.appendChild(newNav2)
