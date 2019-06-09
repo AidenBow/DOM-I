@@ -41,8 +41,6 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let topContent = document.getElementsByClassName("top-content");
-
 let ctaImg = document.getElementById("cta-img")
 ctaImg.src = "img/header-img.png"
 
@@ -53,6 +51,7 @@ let navigation = document.getElementsByTagName("a")
 
 for(let i = 0; i < navigation.length; i++){
   navigation[i].textContent = (siteContent.nav[`nav-item-${i+1}`])
+  navigation[i].style.color = "green"
 }
 
 let ctaText = document.querySelector(".cta-text h1")
@@ -83,3 +82,18 @@ contact[3].textContent = siteContent["contact"]["email"]
 
 let footer = document.querySelector("footer p")
 footer.textContent = siteContent["footer"]["copyright"]
+
+let newImg = document.createElement("img")
+newImg.src = "https://i.kym-cdn.com/entries/icons/mobile/000/025/923/1504551931722.jpg"
+newImg.style.height = "250px"
+ctaText.prepend(newImg)
+
+let newNav = document.createElement("img")
+newNav.src = "https://orig00.deviantart.net/cca9/f/2018/192/d/0/one_very_sad_cat_by_heatherandstuff-dcgx2q4.png"
+newNav.style.height = "40px"
+navigation[0].prepend(newNav)
+
+let newNav2 = document.createElement("img")
+newNav2.src = "https://i.kym-cdn.com/photos/images/newsfeed/001/384/535/295.jpg"
+newNav2.style.height = "40px"
+navigation[5].appendChild(newNav2)
