@@ -42,7 +42,6 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let topContent = document.getElementsByClassName("top-content");
-console.log(topContent)
 
 let ctaImg = document.getElementById("cta-img")
 ctaImg.src = "img/header-img.png"
@@ -51,19 +50,27 @@ let midImg = document.getElementById("middle-img")
 midImg.src = "img/mid-page-accent.jpg"
 
 let navigation = document.getElementsByTagName("a")
-console.log(navigation[1])
 
 for(let i = 0; i < navigation.length; i++){
   navigation[i].textContent = (siteContent.nav[`nav-item-${i+1}`])
-  console.log(siteContent.nav[`nav-item-${i+1}`])
 }
 
 let ctaText = document.querySelector(".cta-text h1")
-console.log(ctaText)
-
 ctaText.textContent = siteContent.cta.h1
 
 let ctaBtn = document.querySelector(".cta-text button")
-
 ctaBtn.textContent = siteContent.cta.button
 
+let headers = document.querySelectorAll(".text-content h4")
+headers[0].textContent = siteContent["main-content"]["features-h4"]
+headers[1].textContent = siteContent["main-content"]["about-h4"]
+headers[2].textContent = siteContent["main-content"]["services-h4"]
+headers[3].textContent = siteContent["main-content"]["product-h4"]
+headers[4].textContent = siteContent["main-content"]["vision-h4"]
+
+let textContent = document.querySelectorAll(".text-content p")
+textContent[0].textContent = siteContent["main-content"]["features-content"]
+textContent[1].textContent = siteContent["main-content"]["about-content"]
+textContent[2].textContent = siteContent["main-content"]["services-content"]
+textContent[3].textContent = siteContent["main-content"]["product-content"]
+textContent[4].textContent = siteContent["main-content"]["vision-content"]
