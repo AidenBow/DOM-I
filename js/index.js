@@ -74,3 +74,12 @@ textContent[1].textContent = siteContent["main-content"]["about-content"]
 textContent[2].textContent = siteContent["main-content"]["services-content"]
 textContent[3].textContent = siteContent["main-content"]["product-content"]
 textContent[4].textContent = siteContent["main-content"]["vision-content"]
+
+let contact = document.querySelectorAll(".contact h4, .contact p")
+contact[0].textContent = siteContent["contact"]["contact-h4"]
+contact[1].textContent = siteContent["contact"]["address"]
+contact[2].textContent = siteContent["contact"]["phone"]
+contact[3].textContent = siteContent["contact"]["email"]
+
+let footer = document.querySelector("footer p")
+footer.textContent = siteContent["footer"]["copyright"]
